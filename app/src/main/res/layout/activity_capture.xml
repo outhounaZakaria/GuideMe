@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    tools:context=".CaptureActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:orientation="horizontal">
+
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="-62dp"
+            android:layout_marginBottom="-10dp"
+            tools:context="org.tensorflow.demo.CameraActivity">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="98dp"
+                android:background="@color/tfe_semi_transparent">
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </FrameLayout>
+
+
+
+        <androidx.camera.view.PreviewView
+            android:id="@+id/viewFinder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="133dp">
+        </androidx.camera.view.PreviewView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="280dp"
+            android:backgroundTint="@color/tfe_color_accent"
+            android:scaleType="fitXY"
+            android:src="@drawable/blind_shoping_img" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="280dp"
+            android:backgroundTint="@color/tfe_color_accent"
+            android:scaleType="fitXY"
+            android:src="@drawable/blind_shoping_img" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="365dp"
+            android:backgroundTint="@color/tfe_color_accent"
+            android:scaleType="fitXY"
+            android:src="@drawable/backround_blid_shoping" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/lancerDetection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
